@@ -16,13 +16,12 @@ h1 {
 .selection {
     background: none;
     cursor: pointer;
-    foot-size: 2rem;
     font-size: 2rem;
     transition: 100ms;
 }
 
 .selection:hover {
-    transform: scale(2:3);
+    transform: scale(2.3);
 }
 
 .results {

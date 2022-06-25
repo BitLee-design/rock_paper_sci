@@ -16,18 +16,18 @@ const SELECTIONS = [
     },
     {
         name: 'scissors',
-        emoji: '✌️',
+        emoji: '🤞',
         beats: 'paper'
     }
 ]
 
-selectionButtons.forEach(selectionButton) => {
+selectionButtons.forEach(selectionButton => {
     selectionButton.addEventListener('click', e => {
         const selectionName = selectionButton.dataset.selection 
         const selection = SELECTIONS.find(selection => selection.name === selectionName)
         makeSelection(selectionName)
     })
-}
+})
 
 function makeSelection(selection) {
     const computerSelection = randomSelection()
